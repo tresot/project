@@ -249,7 +249,7 @@
 
         /* LIGNE ACTIVE */
         .lyric-line.active {
-            color: #ffffff;
+            color: #fff;
             font-weight: 700;
             text-shadow: 
                 0 0 30px var(--color-primary),
@@ -262,7 +262,7 @@
                 translateX(calc(sin(var(--phase, 0)) * 20px))
                 translateY(calc(cos(var(--phase, 0)) * 5px));
             filter: 
-                blur(calc(sin(var(--blur-phase, 0)) * 1px))
+                blur(calc(sin(var(--blur-phase, 0)) * 0.1px))
                 brightness(calc(1 + sin(var(--bright-phase, 0)) * 0.2));
             z-index: 10;
             animation: 
@@ -861,3 +861,4 @@
     </script>
 </body>
 </html>
+
